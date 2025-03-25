@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="IMG_03.jpeg" type="image/jpeg">
+        <title>
+            My Media
+        </title>
+        <style>
+
+            .picture-container {
+                display: flex;
+                flex-direction: column; /* Align image, title, and audio in a column */
+                align-items: center;
+                justify-content: center;
+                background-color: #ecc8c8;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+            .picture-container img {
+                border-radius: 32px;
+                display: flex;
+                justify-content: center;
+                width: auto;
+                height: 200px;
+                display: block;
+                object-fit: cover;
+                aspect-ratio: 1;
+                gap: 30px;
+                animation-name: rotate;
+                animation-duration: 10s;
+                animation-delay: 0s;
+
+            }
+
+            .picture-container img {
+                width: 250px;
+                height: 250px;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            .picture-container p {
+                margin-top: 10px;
+                font-size: 20px;
+                color: #5a0606;
+            }
+
+            .picture-container audio {
+                margin-top: 10px;
+                width: 100%;
+            }
+            .grid-container-main {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            .grid-main-item {
+                text-align: center;
+                border-radius: 5px;
+            }
+            
+            .grid-container-musicalbums {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+            }
+            .grid-musicalbums-item {
+
+                text-align: center;
+                font-size: small;
+            }
+            .grid-musicalbums-item img{
+                width: 100%; 
+                aspect-ratio: 1 / 1;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                object-fit: cover; /* Keeps the image visually balanced */
+                border-radius: 16px;
+            }         
+            .container-movie-main{
+                padding: 0;
+
+            }
+            
+            .container-movie {
+                display: flex;
+                flex-direction: row;
+
+            }
+            .movie-poster {
+                width: 70%;
+                margin-right:20px;
+            }  
+
+            .movie-poster h1{
+                margin: 0;
+            }  
+            .movie-preview {
+                width: 30%;
+            }  
+
+            .movie-poster img {
+                width: 100%; 
+                object-fit: cover; /* Keeps the image visually balanced */
+                aspect-ratio: 16/8;
+                border-radius: 16px;
+            } 
+            .movie_category_title{
+                padding-left: 40px;
+                padding-right: 40px;
+                font-size: xxx-large;
+            }
+            .movie-info-container{
+                background-color: #ffe9f6;
+                margin-top: 12px;
+            }
+            section{
+                margin: 0 20%;
+            }
+            
+        </style>
+    </head>
+    <body style="">
+        <nav id="nav_style">
+            <ul id="ul_style">
+                <li>
+                    <a href="index.html" id="nav_a_style">Home</a>
+                </li>
+                <li>
+                    <a href="biography_page.html" id="nav_a_style">Biography</a>
+                </li>
+                <li>
+                    <a id="nav_a_style" href="skills_page.html">Skills</a>
+                </li>
+                <li>
+                    <a id="nav_a_style" href="resume_page.html">Resume</a>
+                </li>
+                <li>
+                    <a href="gallery_page.html" id="nav_a_style">Photo Gallery</a>
+                </li>
+                <li>
+                    <a href="media_page.html" id="nav_a_style">My Media</a>
+                </li>
+                <li>
+                    <a href="dreamplaces_page.html" id="nav_a_style">Dream Places</a>
+                </li>
+                
+                <li>
+                    <a href="bucket_list_page.html" id="nav_a_style">Bucket List</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section >
+            <h1 class="page-welcome-title">Welcome to My Music and Movie World! <br> Explore my favorite tunes and films!</h1>
+            <div class="grid-container-main">
+                <div class="grid-main-item">
+                    <h2 style="text-align: left;">Pop</h2>
+                    <div class="grid-container-musicalbums">
+                        <div class="grid-musicalbums-item">
+                            <a href="album0.jpg">
+
+                                <img src="album0.jpg" alt="" srcset="">
+                            </a>
+                            <p><b>Guilty as Sin</b><br>Taylor Swift</p>
+                        </div>
+                        <div class="grid-musicalbums-item">
+                            <a href="album1.jpg">
+                                <img src="album1.jpg" alt="" srcset="">
+
+                            </a>
+                            <p><b>All because i liked a boy</b><br>Sabrina Carpenter</p>
+
+                        </div>
+                        <div class="grid-musicalbums-item">
+                            <a href="album2.jpg">
+
+                                <img src="album2.jpg" alt="" srcset="">
+                            </a>
+                            <p><b>Happier than Ever</b><br>Billie</p>
+
+                        </div>
+                        <div class="grid-musicalbums-item">
+                            <a href="album3.jpg">
+
+                                <img src="album3.jpg" alt="" srcset="">
+                            </a>
+                            <p><b>Gateaway Car</b><br>Taylor Swift</p>
+
+                        </div>
+                       
+                        
+                    </div>
+                    
+                </div>
+                <div class="grid-main-item">
+                    <h2 style="text-align: left;">RnB</h2>
+
+                    <div class="grid-container-musicalbums">
+                        
+                        <div class="grid-musicalbums-item">
+                            <a href="album4.jpg">
+                                <img src="album4.jpg" alt="" srcset="">
+
+                            </a>
+
+                            <p><b>Nobody Gets Me</b><br>SZA</p>
+
+                        </div>
+                        <div class="grid-musicalbums-item">
+                            <a href="album5.jpg">
+                                <img src="album5.jpg" alt="" srcset="">
+
+                            </a>
+                            <p><b>Good Thing</b><br>Kehlani</p>
+
+                        </div>
+                        <div class="grid-musicalbums-item">
+                            <a href="album6.jpg">
+                                <img src="album6.jpg" alt="" srcset="">
+
+                            </a>
+                            <p><b>Meet me in Amsterdam</b><br>Rini</p>
+
+                        </div>
+                        <div class="grid-musicalbums-item">
+                            <a href="album7.jpg">
+
+                                <img src="album7.jpg" alt="" srcset="">
+                            </a>
+                            <p><b>Always</b><br>Daniel Caesar</p>
+
+                        </div>
+                    
+                    </div>
+
+
+                </div>
+                
+                    
+            </div>
+                    <h2 style="text-align: left;">Beat</h2>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+                        <div>
+                            <div class="picture-container">
+                                <img src="gas.png" alt="Guilty as Sin">
+                                <p>Guilty as Sin</p>
+                                <audio controls>
+                                    <source src="gulity.mp3">
+                                </audio>
+                            </div>
+                            <div>
+                                <p>song info</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="picture-container">
+                                <img src="thefeels.png" alt="The Feels">
+                                <p>The Feels</p>
+                                <audio controls>
+                                    <source src="TWICE The Feels MV Teaser 2.mp3">
+                                </audio>
+                            </div>
+                            <div>
+                                <p>song info</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="picture-container">
+                                <img src="aboutyou.png" alt="About You">
+                                <p>About You</p>
+                                <audio controls>
+                                    <source src="about_you.mp3">
+                                </audio>
+                            </div>
+                            <div>
+                               <p>song info</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section>
+            <h1 class="movie_category_title">Anime</h1>
+
+            <div class="container-movie-main">
+                <div class="container-movie">
+                    <div class="movie-poster">
+                        <a href="aot.jpg">
+
+                            <img src="aot.jpg" alt="Image 1">
+                        </a>
+                        <div class="movie-info-container"  style=" padding: 42px; border-radius: 16px;">
+                            <h1>Attack on Titan</h1>
+                            <p>
+                                Attack on Titan (TV series)
+                                Attack on Titan (film)
+                                List of Attack on Titan characters
+                                People also ask
+                                What is the best summary of Attack on Titan?
+                                Attack on Titan, an endless cycle of hatred
+                                Attack on Titan follows the fate of mankind, who, after being decimated by giant monsters, retreat to the safety of their last kingdom, protected by three great circular walls over fifty meters high.</p>
+        
+                        </div>
+                    </div>
+                    <div class="movie-preview" style="display: flex; flex-direction: column;">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CID-sYQNCew?si=9csDaTkb-rvedioE" title="YouTube video player" frameborder="0" allow="accelerometer;
+                                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HwY_2j0mdpk?si=qeVCk266QNihYlZn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <h1 class="movie_category_title">Anime</h1>
+            <div class="container-movie-main">
+                <div class="container-movie">
+                    <div class="movie-poster">
+                        <a href="kingdom.jpg">
+
+                            <img src="kingdom.jpg" alt="Image 1">
+                        </a>
+                        <div class="movie-info-container" style=" padding: 42px; border-radius: 16px;">
+                            <h1>kingdom</h1>
+                            <p>The deceased king rises and a mysterious plague begins to spread; the prince must face a new breed of enemies to unveil the evil scheme and save his people.</p>
+                        </div>
+                    </div>
+                    <div class="movie-preview" style="display: flex; flex-direction: column;">
+                        
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/utADqXF1EVc?si=Ym0VDW3rjmlEDUL6" title="YouTube video player" frameborder="0" allow="accelerometer;
+                                autoplay; clipboard-write;encrypted-media; gyroscope;picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DcuEbTFvy70?si=FSTbZ6FWvzPeFGTh" title="YouTube video player" frameborder="0" allow="accelerometer;
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+                    </div>
+                </div>
+                
+
+            </div>
+            <h1 class="movie_category_title">Anime</h1>
+
+            <div class="container-movie-main">
+                <div class="container-movie">
+                    <div class="movie-poster">
+                        <a href="aliceborderland.webp">
+                            <img src="aliceborderland.webp" alt="Image 1">
+
+                        </a>
+                        <div class="movie-info-container"  style=" padding: 42px; border-radius: 16px;">
+                            <h1>Alice in Borderland</h1>
+                            <p>Obsessed gamer Arisu suddenly finds himself in a strange, emptied-out version of Tokyo in which he and his friends must compete in dangerous games in order to survive.</p>
+                        </div>
+                    </div>
+                    <div class="movie-preview" style="display: flex; flex-direction: column;">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/w_6ZWsVLGz8?si=WsX08fJ2E5yBY4jT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DcuEbTFvy70?si=FSTbZ6FWvzPeFGTh" title="YouTube video player" frameborder="0" allow="accelerometer;
+                                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </section>
+        <section >
+            <div class="goto-top-navigator-container">
+                <div class="goto-top-navigator-item">
+                    <a href="#">
+                        <img style="height: 24px; width: auto;" src="top-arrow-5-svgrepo-com.svg" alt="" srcset="">
+                        <p> Go Top</p>
+                    </a>
+                </div>
+                <div class="goto-top-navigator-item">
+                    <a href="index.html">
+                        <img style="height: 24px; width: auto;" src="home-smile-svgrepo-com.svg" alt="" srcset="">
+                        <p> Home</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
+    
+</html>
