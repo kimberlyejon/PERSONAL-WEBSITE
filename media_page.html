@@ -68,16 +68,24 @@
                 gap: 10px;
             }
             .grid-musicalbums-item {
-
+                background-color: #ecc8c8;
                 text-align: center;
                 font-size: small;
+                padding: 16px;
+                border-radius: 16px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+            }
+            .grid-musicalbums-item audio{
+                width: 100%;
+                border-radius: 12px;
             }
             .grid-musicalbums-item img{
                 width: 100%; 
                 aspect-ratio: 1 / 1;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
                 object-fit: cover; /* Keeps the image visually balanced */
-                border-radius: 16px;
+                border-radius: 12px;
             }         
             .container-movie-main{
                 padding: 0;
@@ -152,49 +160,74 @@
                 </li>
             </ul>
         </nav>
-
-        <section >
+        <section>
             <h1 class="page-welcome-title">Welcome to My Music and Movie World! <br> Explore my favorite tunes and films!</h1>
+            <div style="display: flex; flex-direction: row; justify-content: center; gap: 32px;margin-bottom: 32px;">
+                <a href="#media_page_movie_section">
+                    <img style="height: 42px; width: 42px;" src="movie-recorder-svgrepo-com.svg" alt="" srcset="">
+                </a>
+                <a href="#media_page_music_section">
+                    <img style="height: 42px; width: 42px;" src="music-settings-svgrepo-com.svg" alt="" srcset="">
+
+                </a>
+            </div>
+        </section>
+        <section id="media_page_music_section">
+            
+
             <div class="grid-container-main">
                 <div class="grid-main-item">
                     <h2 style="text-align: left;">Pop</h2>
                     <div class="grid-container-musicalbums">
+
                         <div class="grid-musicalbums-item">
                             <a href="album0.jpg">
 
                                 <img src="album0.jpg" alt="" srcset="">
                             </a>
                             <p><b>Guilty as Sin</b><br>Taylor Swift</p>
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
                         </div>
+                        
                         <div class="grid-musicalbums-item">
                             <a href="album1.jpg">
                                 <img src="album1.jpg" alt="" srcset="">
-
                             </a>
                             <p><b>All because i liked a boy</b><br>Sabrina Carpenter</p>
-
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
                         </div>
+
                         <div class="grid-musicalbums-item">
                             <a href="album2.jpg">
 
                                 <img src="album2.jpg" alt="" srcset="">
                             </a>
                             <p><b>Happier than Ever</b><br>Billie</p>
-
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
                         </div>
+
                         <div class="grid-musicalbums-item">
                             <a href="album3.jpg">
 
                                 <img src="album3.jpg" alt="" srcset="">
                             </a>
                             <p><b>Gateaway Car</b><br>Taylor Swift</p>
-
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
                         </div>
                        
                         
                     </div>
                     
                 </div>
+
                 <div class="grid-main-item">
                     <h2 style="text-align: left;">RnB</h2>
 
@@ -203,35 +236,42 @@
                         <div class="grid-musicalbums-item">
                             <a href="album4.jpg">
                                 <img src="album4.jpg" alt="" srcset="">
-
                             </a>
-
                             <p><b>Nobody Gets Me</b><br>SZA</p>
-
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
                         </div>
+
                         <div class="grid-musicalbums-item">
                             <a href="album5.jpg">
                                 <img src="album5.jpg" alt="" srcset="">
-
                             </a>
                             <p><b>Good Thing</b><br>Kehlani</p>
-
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
                         </div>
+
                         <div class="grid-musicalbums-item">
                             <a href="album6.jpg">
                                 <img src="album6.jpg" alt="" srcset="">
-
                             </a>
                             <p><b>Meet me in Amsterdam</b><br>Rini</p>
-
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
                         </div>
+                        
                         <div class="grid-musicalbums-item">
                             <a href="album7.jpg">
 
                                 <img src="album7.jpg" alt="" srcset="">
                             </a>
                             <p><b>Always</b><br>Daniel Caesar</p>
-
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
                         </div>
                     
                     </div>
@@ -241,49 +281,10 @@
                 
                     
             </div>
-                    <h2 style="text-align: left;">Beat</h2>
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-                        <div>
-                            <div class="picture-container">
-                                <img src="gas.png" alt="Guilty as Sin">
-                                <p>Guilty as Sin</p>
-                                <audio controls>
-                                    <source src="gulity.mp3">
-                                </audio>
-                            </div>
-                            <div>
-                                <p>song info</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="picture-container">
-                                <img src="thefeels.png" alt="The Feels">
-                                <p>The Feels</p>
-                                <audio controls>
-                                    <source src="TWICE The Feels MV Teaser 2.mp3">
-                                </audio>
-                            </div>
-                            <div>
-                                <p>song info</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="picture-container">
-                                <img src="aboutyou.png" alt="About You">
-                                <p>About You</p>
-                                <audio controls>
-                                    <source src="about_you.mp3">
-                                </audio>
-                            </div>
-                            <div>
-                               <p>song info</p>
-                            </div>
-                        </div>
-                    </div>
+                    
         </section>
-        <section>
+        <section id="media_page_movie_section">
             <h1 class="movie_category_title">Anime</h1>
-
             <div class="container-movie-main">
                 <div class="container-movie">
                     <div class="movie-poster">
